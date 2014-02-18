@@ -27,5 +27,10 @@ object StringInterpolation {
     println(s"this is ${'"'}s${'"'} string interpolation")
     println(f"this is ${'"'}f${'"'} string interpolation")
     println(raw"this is ${'"'}raw${'"'} string interpolation")
+
+    val str = "quote escaped"
+    println(s"""this is \"$str\" s string interpolation""")
+    println(s"""this is \"$str\" f string interpolation""")
+    println(raw"""this is "$str" raw string interpolation""")
   }
 }
